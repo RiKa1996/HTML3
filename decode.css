@@ -1,0 +1,1035 @@
+/* This is our header */
+*{
+    box-sizing: border-box;
+   
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    border-style: solid;
+}   
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Metropolis-Regular,sans-serif;
+}
+.header{
+    background-color: #F0F0F0;
+    height: 95px;
+    height: 100%;
+    /* width: 1520px; */
+    /* padding: 24px 48px; */
+}
+/* =========================================box-1 =====================================================*/
+/* This is our container ---- we will make a layout ---ye container sbse bada hai like navbar*/
+.container{
+    width: 100%;
+    height: 95px;
+    background-color: #F0F0F0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 48px;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+/* This is our logo class ----ye logo ka container hai jise humne ek height aur width di hai */
+/* .logo-container{
+    height: 43px;
+    width: 320px;    
+}*/
+
+.logo{
+    width: 185px; 
+    height: 43px;
+    background: no-repeat;
+    /* background-position: -35px; */   /*is se humne ek container ke ander ek aur container banaya hai*/   
+}
+
+/* ========================================box-2======================================================= */
+ /* This is our con-name class isme humare header ke shop category,..... aaye  hai */
+ 
+ .name{
+    height: 24px;
+    width: 701px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #1a1a1a;
+ }
+.name-container{
+    margin-right: 70px; 
+}
+/* Text me jo underline aa gya tha use hatane ke liye text-decoration:none ka use krte hai */
+
+.name h4:hover{
+    color: #727171;
+}
+
+.name i{
+    margin-right: 32px;
+    /* margin-left: -10px; */
+    font-size: 10px;
+    font-weight: bold;
+}
+.name i:hover{
+    color: blue;
+}
+
+ /* =======================================box-3=======================================================*/
+ .icon-search-icon{
+    height: 22px;
+    width: 114px;
+    /* color: #1A1A1A; */
+    display: flex;
+    /* align-items:start; */
+    justify-content: space-between;
+    /* font-weight: 700;
+    font-size: 16px */
+    
+ }
+/* icon ko size badane ke liye  */
+ .icon-search-icon i{
+    font-size: 22px;
+    width: 22px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    stroke-width: 1.2px;
+ }
+
+ .icon-container{
+    margin-right: 0px;
+ }
+
+/* ====================================this is container panel---------1===================================================================== */
+/* ye humare header ka dusra container panel hai */
+ .container2{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+ .panel-img{
+   max-width: 40px;
+   max-height: 40px;
+ }
+
+ .panelA{
+    /* height: 62px; */
+    width: fit-content;   /* isse particular space me badta gadta rahta hai */
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    gap: 10px;  
+    padding: 10px;
+    justify-content: center; 
+    position: relative;
+    cursor: pointer;
+ }
+
+ 
+ .panel-img img{
+    height: 30px;
+    width: 30px; 
+    display: flex;
+    gap: 10px;
+    align-items: center;  
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+ }
+
+ .item-content p.panel-name{        /* .uspBar-item-content p.item-content-heading */
+    font-size: 15px;
+    margin-bottom: 5px;
+    /* text-align:center;
+    margin-bottom:auto;
+    display: block; */
+
+ }
+
+ /* .uspBar-item .item-content-heading */
+ .panelA .panel-name{
+   font-weight: 600;
+ }
+
+/* .uspBar-item-content p.item-content-heading:after =======1 */
+ .item-content p.panel-name::after{
+    content: " ";
+    display:inline-block;
+    background: url('https://decodeage.com/cdn/shop/files/noun-info-6651551.svg?v=1715931099');
+    height: 11px;
+    width: 11px;
+    background-size: contain;
+    margin-left: 4px;
+    background-repeat: no-repeat;
+
+ }
+
+ .item-content p{
+   font-size: 13px;
+   text-align: center;
+   /* margin-top: 5px; */
+   /* display: block; */
+ }
+/*========================================================2 */
+ .item-content p:nth-child(2)::after{
+   content: " ";
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+ }
+
+ /* ====================================this is container panel---------2===================================================================== */
+ .panelA{
+   width: fit-content;
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   padding: 10px;
+   justify-content: center;
+   position: relative;
+   cursor: pointer;
+ }
+/* .panel-name::after{
+   content: " ";
+   display: inline-block;
+   background-image: url(/cdn/shop/files/noun-info-6651551.svg?v=1715931099/);
+   height: 11px;
+   width: 11px;
+   background-size: contain;
+   margin-left: 4px;
+   background-repeat: no-repeat;
+} */
+
+.item-content .tooltip-logo{
+   display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.item-content .tooltip-icon img{
+   max-width: 37px;
+}
+
+.item-content .tooltip-logo::after{
+   content: " ";
+    display: inline-block;
+    /* height: 40px; */
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.item-content .tooltip-logo::after{
+   height: 47px;
+}
+
+
+/* ==========================================4 =============================================== */
+/* .cre-t02-uspBarDesktop .uspBar-item:last-child .uspBar-item-content */
+.container2 .item-content{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+/* ======================================================================================================================================= */
+/* This is our heroA section */
+.anchor{
+   width: 100%;
+   height: 100%;
+} 
+
+.blog-banner{
+   background-color: rgb(26 26 26);
+   width: 100%;
+   height: 490px;
+   background: #1A1A1A0D;
+   color: #1a1a1a;
+}
+
+.container3{
+   margin-left: 32px;
+   margin-right: 32px; 
+}
+
+.blog-banner-content{
+   padding-top: 112px;
+   padding-bottom: 112px;
+   text-align: center;
+   justify-items: center;
+   display: flex;
+   gap: 2.5rem;
+}
+
+.v-stack{
+   /* height: 100%;
+   width: 100%; */
+   display: grid;
+   gap: 2.5rem;
+}
+
+.heading1{
+   font-weight: 700;
+   font-style: normal;
+   letter-spacing: -0.02em;
+   font-size: 52px;
+   line-height: 1;
+   /* margin: 43px 0; */
+}
+
+/* .button-with-icon .submit-email i{
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+} */
+
+.submit-email{
+   height: 60px;
+   width: 500px;
+   align-items: start;
+   display:flex;
+   gap: 1rem;
+   grid-template-columns: minmax(0, 1fr) max-content;
+   text-align: center;
+   position: relative;
+   justify-content: space-between;
+}
+
+.email-xl{
+   width: 100%;
+   height: 60px;
+   padding: 17px 40px;
+   border-radius: .5rem;
+   color: #1A1A1A;
+   opacity: .5;
+   display: grid;
+   border-width: 2px;
+   background-color: #F0F0F0;
+   
+}
+
+.button--xl{
+   display: flex;
+   text-align: center;
+   gap: 7px;
+   height: 60px;
+   padding: 17px 40px;
+   border-radius: 3.75rem;
+   background-color: #1A1A1A;
+   font-weight: 700;
+   font-size: 20px;
+   cursor: pointer;
+   color: white;
+   text-align:left; 
+   line-height: 1.2;                     /* ******************************************yha se start krna hai.*********** */
+}
+
+.fa-regular{
+   line-height: 1.3;
+}
+
+/* -------------------------------------2---------------------------------------- */
+.post-bilogical{
+   height: 57px;
+   width: 100%;
+   white-space: nowrap;
+   justify-items: safe center;
+   display: grid;
+}
+
+.post-bioA{
+   
+   
+}
+
+.post-bioA a{
+   padding: 16px 24px;
+   text-decoration: none;
+}
+
+.post-bioB{
+   font-size: 1rem;
+   font-weight: 700;
+   display: flex;
+   align-items: center;  
+   list-style: none;
+   height: 57px;
+   width: 274px;
+}
+
+a.selected{
+   color: #1A1A1A;
+   background-color: white;
+}
+/* =========================yha se humari picturs starts ho rhi hai=============================================== */
+/* ===================================================images-1==================================================== */
+.blog-posts__container{
+   margin: 80px 48px 112px;
+   gap: 5rem;
+   margin-block-start: 5rem;
+   margin-block-end: 7rem;
+   display: grid;
+
+}
+
+.all-blog-post{
+   /*
+   display: grid; */
+   /* align-items: flex-start; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 80px;
+   
+}
+
+.pageA{
+   display: grid;
+   grid-template-columns: 1fr 7fr;
+   grid-column: 1 / -1;
+/*    background-color: rgb(26 26 26);*/
+   /* height: 100%; */
+   width: 100%;
+ }
+
+ .pageA img{
+   width: 924px;
+   height: 606px;
+   /* max-width: (999px) 100vw; */
+   object-fit: cover;  
+ }
+
+ .pageA-first{ 
+   height: 606px;
+   width: 924px;
+   /* max-width: 999px;*/
+   object-fit: cover;
+ }
+
+.pageA-info{
+   height: 606px;
+   width: 500px;
+   padding: 64px;
+   display: grid;
+   color: #1A1A1A;
+   background-color: #dacccc;
+   gap: 1.5rem;
+}
+
+.informationA{
+   gap: 2rem;
+ }
+
+ .info-first{
+   display: grid;
+   gap: 1.25rem;
+ }
+
+ /* ------------------------ */
+ /* this is unique code */
+
+ .h2 a{
+   font-size: 40px;
+   line-height: 1.1;
+   text-decoration: none;
+   font-weight: 700;
+   letter-spacing: -0.02em;
+   color: black;
+   
+ }
+
+ .h3 a{
+   font-size: 1.25rem;
+   line-height: 1.6;
+   opacity: .9;
+ }
+
+ .informaionB span{
+   line-height: 1.5;
+   font-size: 14px;
+   color: #1A1A1A;
+   opacity: .7;
+ }
+
+ .informaionB i{
+   opacity: .7;
+ }
+
+ /* ------------------------ */
+ .informaionB{
+   display: flex;
+   gap: 15px;
+ }
+ 
+/* ===================================================images-2==================================================== */
+
+.pageB-info{
+   gap: 0.75rem;
+   display: grid;
+}
+
+.remove-line a{
+   text-decoration: none;
+   font-size: 25px;
+   color: #1A1A1A;
+   font-weight: 700;
+}
+
+.dsng-line a{
+   font-size: 16px;
+   color: #1A1A1A;
+   line-height: 1.5rem;
+}
+
+.pageB{
+    height: 421px;
+    width: 421px;
+    gap: 10px;
+    display: grid;
+    
+}
+
+.image-set{
+   height: 175px;
+   width: 100%;
+   border-radius: 15px;
+}
+
+/* =====================================newsletter============================================== */
+.newsletter{
+   height: 407px;
+   width: 421px;
+   padding: 40px;
+   color: #1A1A1A;
+   background-color: #e0e0e4;
+   display: grid;
+   justify-content: space-between;
+   gap: 2rem;
+   border-radius: 15px;
+}
+
+.icon-desing i{
+   height: 26xp;
+   width: 29px;
+}
+
+.newsletter-icon-heading{
+   display: grid;
+}
+
+.letter-head{
+   font-size: 24px;
+   font-weight: 700;
+   text-align: center;
+}
+
+.center-need{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.letter-heading{
+   font-size: 16px;
+   text-align: center;
+}
+
+.submit-letter{
+   
+   justify-content: space-between;
+   gap: 1rem;
+   display: grid;
+}
+
+.letter-width{
+   width: 340px;
+}
+
+.subscribe-des{
+   background-color: #F0C417;
+   color: black;
+   text-align: center;
+   justify-content: safe center;
+   
+}
+
+/* ===================================== Previous-Next-1 ============================================== */
+.down-nav{
+   border-width: 1px;
+   justify-self: center;
+   border-radius: 3.75rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 50px;
+   width: 158px;
+   background-color: #F3F3F6;
+   border-color: rgb(176, 171, 171);
+}
+
+.previou-next{
+   padding: 12px 8px;
+   justify-self: center;
+}
+
+.left-arrow{
+   padding: 0 20px;
+}
+
+.right-arrow{
+   padding: 0 20px;
+}
+
+/* =============================================== Section-B======================================== */
+.first-group{
+   padding: 28px 48px 48px;
+   background-color: #F0F0F0;
+}
+
+.group-ABC{
+   width: 100%;
+   display: grid;
+   align-items: center;
+   gap: 3rem;
+
+}
+
+.h1-heading{
+   font-size: 48px;
+   color: #1A1A1A;
+  /*  background-color: #dacccc; */
+   display: grid;
+   justify-items: center;
+   
+}
+
+.full-picture{
+   /* background-color: rgb(191, 212, 212); */
+}
+
+.product-list{
+   display: flex;
+   
+   justify-content: space-between;
+   gap: 1.5rem;
+}
+
+.productA{
+   background-color: white;
+   border-radius: 10px;
+}
+
+.blog{
+   background-color: #F0F0F0;
+}
+
+.heading-product{
+   display: grid;
+   /* align-items: center;
+   justify-content: center;
+   justify-self: center; */
+   gap: .25rem;
+   padding: 24px 32px 32px;
+}
+
+.heading-product-nmn{
+   font-size: 16px;
+   font-weight: 700;
+   color: #1A1A1A;
+   text-decoration: none;
+}
+
+.heading-product-star {
+   height: 36px;
+   width: 77px;
+   font-size: 16px;
+   text-decoration: none;
+   color: #7D7D7D;
+   border-radius: 58px;
+   border-width: .25px;
+   justify-self: start;
+   padding: 6px 15px;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   
+}
+
+.rating{
+   display: flex;
+   align-items: center;
+}
+
+.picture-product-image{
+   height: 337px;
+   width: 337px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   right: auto;
+}
+
+.buy-rate{
+   display: grid;
+   justify-items: auto;
+   gap: 10px;
+}
+
+.before-rate{
+   text-decoration: line-through;
+   color: #616060;
+}
+
+.rate-product{
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 18px 20px 28px;
+
+}
+
+.shop-btn {
+   background-color: #1A1A1A;
+   color: white;
+   font-size: 14px;
+   justify-self:flex-start;
+   padding: 12px 24px;
+   font-weight: 700;
+   border-radius: 58px;
+   display: flex;
+   align-items: center;
+   justify-self: center;
+   text-align: center;
+   height: 47px;
+   width: 108px;
+}
+
+.uncheck-underline{
+   text-decoration: unset;
+}
+
+.rate-product2{
+   padding: 40px 18px 20px 28px;;
+}
+
+.before-rate2{
+   color: #616060
+}
+
+/* ===================================== Previous-Next-2 ============================================== */
+.down-nav2{
+   border-width: 1px;
+   justify-self: center;
+   border-radius: 3.75rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 48px;
+   width: 135px;
+   background-color: black;
+   border-color: rgb(176, 171, 171);
+}
+
+.previou-next2{
+   padding: 12px 24px;
+   justify-self: center;
+}
+
+.arrow-color{
+   color: white;
+   font-size: 14px;
+   font-weight: 700;
+}
+
+.right-arrow2{
+   padding: 0px 0px 0px 22px;
+}
+/* ========================================This is our logo2 section============================================ */
+.logo2{
+   width: 250px;
+   height: 63px;   
+}
+
+.country-flags {
+   background: -webkit-image-set(url(//decodeage.com/cdn/shop/t/41/assets/country-flags.png?v=3723003…) 1x, url(//decodeage.com/cdn/shop/t/41/assets/country-flags-2x.png?v=1193884…) 2x) no-repeat top left;
+   background: image-set(url(//decodeage.com/cdn/shop/t/41/assets/country-flags.png?v=3723003…) 1x, url(//decodeage.com/cdn/shop/t/41/assets/country-flags-2x.png?v=1193884…) 2x) no-repeat top left;
+   width: 20px;
+   height: 20px;
+   flex-shrink: 0;
+   filter: drop-shadow(0px 2px 3px rgb(0 0 0 / .1));
+
+}
+
+.india-flag{
+   display: flex;
+   gap: .5rem;
+   align-items: center;
+   margin-top: 16px;
+   margin-left: -6px;
+}
+
+.india-button{
+   gap: 12px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 700;
+   background-color: white;
+}
+
+.indian-price{
+   font-size: 14px;
+}
+/* ========================================This is our footer section=========================================== */
+.footer-list2{
+   border-bottom: 1px solid #677279;
+   padding-bottom: 1.3rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer{
+   /* padding-block-start: 4rem;
+   padding-bottom: 2rem; */
+   padding: 64px 0 32px;
+}
+
+.footer-container{
+   margin-inline-start: 3rem;
+   margin-inline-end: 3rem;
+}
+
+.footer-wrap{
+   display: grid;
+   gap: 2rem;
+}
+
+.footer-list{
+   border-bottom: 1px solid #677279;
+   padding-bottom: 1.3rem;
+}
+
+.footer-size{
+   height: 114px;
+   width: 450px;
+   font-size: 40px;
+   font-weight: 700;
+   letter-spacing: -0.02rem;
+   justify-self: center;
+   display: flex;
+   align-items: center;
+   line-height: 1.1;
+   color: #1D1D1D;
+}
+
+.upper-foot{
+   display: flex;
+   justify-content: space-between;
+}
+
+/* letter-size of email box*/
+.letter-size{
+   width: 400px;
+   opacity: 1;
+   border-width: 1px;
+   border-color: #1D1D1D;
+}
+
+.email-logo{
+   display: grid;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* ==================================logo facebook,tutor, instagram, youtube======================= */
+.abc .icon{
+   height: 30px;
+   width: 30px;
+   color: white;
+   background-color: black;
+   padding: 5px;
+   border-radius: 50%;
+   
+}
+
+.abc{
+   gap: .75rem;
+   flex-wrap: wrap;
+   display: flex;
+   justify-content: space-around;
+   list-style: none;
+
+}
+
+.pqr{
+   position: relative;
+}
+
+.icon{
+   /* vertical-align: middle; */
+   display: block;
+}
+/* ====================================================================================================== */
+/* .facebook-all-logo{
+   height: 30px;
+   width: 400px;
+   display: flex;
+   justify-content: space-between;
+   justify-self: center;
+   align-items: center;
+   list-style: none;
+   border-radius: 50%;
+   padding: 5px;
+} */
+
+.inian-flag-logo{
+   height: 20px;
+   width: 26px;
+}
+
+.all-icon{
+   height: 50px;
+   width: 50px;
+   font-size: 15px;
+   
+}
+
+.footer-list-three{
+   display: flex;
+   justify-content: space-between;
+   width: 65%;
+   float: right;
+   height: 296px;
+   
+
+}
+.all-footer-content li{
+   list-style: none;
+   text-align: center;
+   align-items: center;
+   display: flex;
+}
+
+
+.all-footer-content a{
+   text-decoration: none;
+   font-size: 16px;
+   opacity: .7;
+   color: black;
+   justify-self: center;
+   align-items: center;
+}
+
+ul.footer-word{
+   margin: 24px 0 0;
+}
+
+.all-footer-content2 a{
+   text-decoration: none;
+   font-size: 16px;
+   opacity: .7;
+   color: black;
+   justify-self: center;
+   align-items: center;
+   display: grid;
+   align-items: center;
+   text-align: left;
+}
+
+.all-footer-content2 li{
+   list-style: none;
+   text-align: center;
+   align-items: center;
+   display: flex;
+}
+
+ul.footer-word{
+   margin: 24px 0 0;
+}
+
+.all-footer-content3 a{
+   text-decoration: none;
+   font-size: 16px;
+   opacity: .7;
+   color: black;
+   justify-self: center;
+   align-items: center;
+   display: grid;
+   align-items: center;
+   text-align: left;
+}
+
+.all-footer-content3 li{
+   list-style: none;
+   text-align: center;
+   align-items: center;
+   display: flex;
+}
+
+.footer-word2 {
+   margin: 42px 0 0;
+   gap: 10px;
+   display: grid;
+
+}
+
+.footer-heading{
+   font-weight: 700;
+    font-size: 16px;
+    height: 24px;
+    align-items: center;
+    justify-self: start;
+}
+
+.footer-word{
+   gap: 8px;
+   display: grid;
+   margin: 24px 0 0;
+}
+
+/* .footer-word li a{
+   align-items: center;
+} */
+
+/* =========================last-line of footer============================== */
+.last-line-footer{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.footer-last-head{
+   font-size: 14px;
+   color: black;
+   opacity: .7;
+}
+
+.payment-icon{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: .5rem;
+}
+
+.footer-last-icon{
+   height: 22px;
+   width: 36px;
+   border: 1px solid black;
+   border-radius: 2px;
+}
